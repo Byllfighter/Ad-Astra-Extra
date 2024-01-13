@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "adastraextra:uranus_rock"
+  },
+  "result": "adastraextra:uranus_rock_slab"
+}

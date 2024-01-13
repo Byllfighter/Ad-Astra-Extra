@@ -1,0 +1,17 @@
+{
+  "translation": "gui.adastraextra.mars.deimos",
+  "galaxy": "ad_astra:milky_way",
+  "solar_system": "ad_astra:solar_system",
+  "world": "adastraextra:deimos",
+  "orbit_world": "adastraextra:deimos_orbit",
+  "parent_world": "ad_astra:mars",
+  "rocket_tier": 3,
+  "gravity": 0.57,
+  "has_atmosphere": false,
+  "days_in_year": 1,
+  "temperature": -40,
+  "solar_power": 12,
+  "orbit_solar_power": 14,
+  "has_oxygen": false,
+  "button_color": "orange"
+}

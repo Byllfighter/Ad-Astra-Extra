@@ -1,0 +1,34 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:JupiterRockSlab"
+      },
+      {
+        "value": "CUSTOM:SaturnRockSlab"
+      },
+      {
+        "value": "CUSTOM:UranusRockSlab"
+      },
+      {
+        "value": "CUSTOM:NeptuneRockSlab"
+      },
+      {
+        "value": "CUSTOM:PhobosRockSlab"
+      },
+      {
+        "value": "CUSTOM:DeimosRockSlab"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "slabs",
+    "namespace": "minecraft"
+  }
+}

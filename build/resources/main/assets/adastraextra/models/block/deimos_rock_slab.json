@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "adastraextra:block/deimosrock",
+    "top": "adastraextra:block/deimosrock",
+    "side": "adastraextra:block/deimosrock"
+  },
+  "render_type": "solid"
+}

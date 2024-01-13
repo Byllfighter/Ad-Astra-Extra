@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "adastraextra:deimos_rock"
+    }
+  },
+  "result": {
+    "item": "adastraextra:deimos_rock_slab",
+    "count": 6
+  }
+}

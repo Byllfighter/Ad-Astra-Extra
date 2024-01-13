@@ -1,0 +1,34 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:JupiterRockStairs"
+      },
+      {
+        "value": "CUSTOM:SaturnRockStairs"
+      },
+      {
+        "value": "CUSTOM:UranusRockStairs"
+      },
+      {
+        "value": "CUSTOM:NeptuneRockStairs"
+      },
+      {
+        "value": "CUSTOM:PhobosRockStairs"
+      },
+      {
+        "value": "CUSTOM:DeimosRockStairs"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "stairs",
+    "namespace": "minecraft"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "feature": "adastraextra:gas_cloud_feature",
+  "placement": [
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 0
+        },
+        "max_inclusive": {
+          "absolute": 64
+        }
+      }
+    }
+  ]
+}

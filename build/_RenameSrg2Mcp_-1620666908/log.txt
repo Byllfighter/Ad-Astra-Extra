@@ -1,0 +1,15 @@
+Java Launcher: D:\Pylo\MCreator20234\jdk\bin\java.exe
+Arguments: '--task, SRG_TO_MCP, --input, C:\Users\Админ\.mcreator\gradle\caches\modules-2\files-2.1\curse.maven\botarium-704113\4831434\d0d985e3ad275c68f8140520312062e41cca37e7\botarium-704113-4831434.jar, --output, C:\Users\Админ\.mcreator\gradle\caches\forge_gradle\deobf_dependencies\curse\maven\botarium-704113\4831434_mapped_official_1.20.1\botarium-704113-4831434_mapped_official_1.20.1.jar, --mcp, C:\Users\Админ\.mcreator\gradle\caches\forge_gradle\mcp_repo\net\minecraft\mapping\1.20.1\mapping-1.20.1-mapping.zip, --strip-signatures'
+Classpath:
+ - C:\Users\Админ\.mcreator\gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\installertools\1.3.2\installertools-1.3.2-fatjar.jar
+Working directory: D:\Pylo\Workspaces\adastraextra\build\_RenameSrg2Mcp_-1620666908
+Main class: net.minecraftforge.installertools.ConsoleTool
+====================================
+Task: SRG_TO_MCP
+Input:  C:\Users\￐ﾐ￐ﾴ￐ﾼ￐ﾸ￐ﾽ\.mcreator\gradle\caches\modules-2\files-2.1\curse.maven\botarium-704113\4831434\d0d985e3ad275c68f8140520312062e41cca37e7\botarium-704113-4831434.jar
+Output: C:\Users\￐ﾐ￐ﾴ￐ﾼ￐ﾸ￐ﾽ\.mcreator\gradle\caches\forge_gradle\deobf_dependencies\curse\maven\botarium-704113\4831434_mapped_official_1.20.1\botarium-704113-4831434_mapped_official_1.20.1.jar
+MCP:    C:\Users\￐ﾐ￐ﾴ￐ﾼ￐ﾸ￐ﾽ\.mcreator\gradle\caches\forge_gradle\mcp_repo\net\minecraft\mapping\1.20.1\mapping-1.20.1-mapping.zip
+Loading MCP Data
+Processing ZIP file
+Stripped Manifest of sha digests
+Process complete

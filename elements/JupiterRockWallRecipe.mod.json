@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 6,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:JupiterRock"
+      },
+      {
+        "value": "CUSTOM:JupiterRock"
+      },
+      {
+        "value": "CUSTOM:JupiterRock"
+      },
+      {
+        "value": "CUSTOM:JupiterRock"
+      },
+      {
+        "value": "CUSTOM:JupiterRock"
+      },
+      {
+        "value": "CUSTOM:JupiterRock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:JupiterRockWall"
+    },
+    "name": "jupiter_rock_wall_recipe",
+    "namespace": "mod"
+  }
+}

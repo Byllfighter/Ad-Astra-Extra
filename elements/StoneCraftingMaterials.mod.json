@@ -1,0 +1,34 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:JupiterRock"
+      },
+      {
+        "value": "CUSTOM:SaturnRock"
+      },
+      {
+        "value": "CUSTOM:UranusRock"
+      },
+      {
+        "value": "CUSTOM:NeptuneRock"
+      },
+      {
+        "value": "CUSTOM:PhobosRock"
+      },
+      {
+        "value": "CUSTOM:DeimosRock"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "stone_crafting_materials",
+    "namespace": "minecraft"
+  }
+}

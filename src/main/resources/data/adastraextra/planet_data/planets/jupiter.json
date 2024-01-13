@@ -1,0 +1,16 @@
+{
+  "translation": "gui.adastraextra.jupiter",
+  "galaxy": "ad_astra:milky_way",
+  "solar_system": "ad_astra:solar_system",
+  "world": "adastraextra:jupiter",
+  "orbit_world": "adastraextra:jupiter_orbit",
+  "rocket_tier": 4,
+  "gravity": 24.79,
+  "has_atmosphere": true,
+  "days_in_year": 4332,
+  "temperature": -110,
+  "solar_power": 8,
+  "orbit_solar_power": 16,
+  "has_oxygen": false,
+  "button_color": "orange"
+}

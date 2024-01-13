@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "adastraextra:deimos_rock"
+  },
+  "result": "adastraextra:deimos_rock_stairs"
+}

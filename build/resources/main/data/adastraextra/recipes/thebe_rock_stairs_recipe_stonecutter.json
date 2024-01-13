@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "adastraextra:thebe_rock"
+  },
+  "result": "adastraextra:thebe_rock_stairs"
+}

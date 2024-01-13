@@ -1,0 +1,23 @@
+repositories {
+  maven {
+      url = 'https://cursemaven.com'
+  }
+}
+
+dependencies {
+  implementation fg.deobf('curse.maven:resourcefullib-570073:4973823')
+  implementation fg.deobf('curse.maven:resourcefulconfig-714059:4683092')
+  implementation fg.deobf('curse.maven:botarium-704113:4831434')
+  implementation fg.deobf('curse.maven:adastra-635042:4894852')
+}
+
+minecraft {
+    runs {
+        client {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+        }
+    }
+}
+
+

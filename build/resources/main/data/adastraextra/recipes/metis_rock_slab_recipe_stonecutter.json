@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "adastraextra:metis_rock"
+  },
+  "result": "adastraextra:metis_rock_slab"
+}

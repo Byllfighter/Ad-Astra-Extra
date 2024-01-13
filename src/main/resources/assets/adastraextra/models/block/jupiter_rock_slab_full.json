@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "adastraextra:block/jupiterrock",
+    "top": "adastraextra:block/jupiterrock",
+    "side": "adastraextra:block/jupiterrock"
+  },
+  "render_type": "solid"
+}

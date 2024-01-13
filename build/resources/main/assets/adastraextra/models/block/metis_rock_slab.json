@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "adastraextra:block/metisrock",
+    "top": "adastraextra:block/metisrock",
+    "side": "adastraextra:block/metisrock"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "adastraextra:amalthea_rock"
+  },
+  "result": "adastraextra:amalthea_rock_stairs"
+}

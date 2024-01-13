@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "adastraextra:jupiter_rock",
+    "adastraextra:saturn_rock",
+    "adastraextra:uranus_rock",
+    "adastraextra:neptune_rock",
+    "adastraextra:phobos_rock",
+    "adastraextra:deimos_rock"
+  ]
+}

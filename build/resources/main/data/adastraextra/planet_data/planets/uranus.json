@@ -1,0 +1,16 @@
+{
+  "translation": "gui.adastraextra.uranus",
+  "galaxy": "ad_astra:milky_way",
+  "solar_system": "ad_astra:solar_system",
+  "world": "adastraextra:uranus",
+  "orbit_world": "adastraextra:uranus_orbit",
+  "rocket_tier": 4,
+  "gravity": 8.87,
+  "has_atmosphere": true,
+  "days_in_year": 30689,
+  "temperature": -195,
+  "solar_power": 6,
+  "orbit_solar_power": 13,
+  "has_oxygen": false,
+  "button_color": "light_blue"
+}

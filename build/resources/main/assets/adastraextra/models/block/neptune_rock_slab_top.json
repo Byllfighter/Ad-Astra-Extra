@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "adastraextra:block/neptunerock",
+    "top": "adastraextra:block/neptunerock",
+    "side": "adastraextra:block/neptunerock"
+  },
+  "render_type": "solid"
+}

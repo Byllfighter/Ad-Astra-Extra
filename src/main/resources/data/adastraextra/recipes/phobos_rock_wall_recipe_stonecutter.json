@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "adastraextra:phobos_rock"
+  },
+  "result": "adastraextra:phobos_rock_wall"
+}

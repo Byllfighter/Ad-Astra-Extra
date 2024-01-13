@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:AdrasteaRock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AdrasteaRock"
+      },
+      {
+        "value": "CUSTOM:AdrasteaRock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AdrasteaRock"
+      },
+      {
+        "value": "CUSTOM:AdrasteaRock"
+      },
+      {
+        "value": "CUSTOM:AdrasteaRock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:AdrasteaRockStairs"
+    },
+    "name": "adrastea_rock_stairs_recipe",
+    "namespace": "mod"
+  }
+}

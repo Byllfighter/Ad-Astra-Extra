@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "adastraextra:phobos_rock"
+    }
+  },
+  "result": {
+    "item": "adastraextra:phobos_rock_wall",
+    "count": 6
+  }
+}

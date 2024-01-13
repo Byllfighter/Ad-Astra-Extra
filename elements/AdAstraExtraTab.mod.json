@@ -1,0 +1,11 @@
+{
+  "_fv": 57,
+  "_type": "tab",
+  "definition": {
+    "name": "Ad Astra Extra",
+    "icon": {
+      "value": "CUSTOM:JupiterRock"
+    },
+    "showSearch": false
+  }
+}

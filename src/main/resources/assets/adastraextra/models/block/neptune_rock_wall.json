@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side",
+  "textures": {
+    "wall": "adastraextra:block/neptunerock",
+    "particle": "adastraextra:block/neptunerock"
+  },
+  "render_type": "solid"
+}

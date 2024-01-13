@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:AmaltheaRock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AmaltheaRock"
+      },
+      {
+        "value": "CUSTOM:AmaltheaRock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AmaltheaRock"
+      },
+      {
+        "value": "CUSTOM:AmaltheaRock"
+      },
+      {
+        "value": "CUSTOM:AmaltheaRock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:AmaltheaRockStairs"
+    },
+    "name": "amalthea_rock_stairs_recipe",
+    "namespace": "mod"
+  }
+}

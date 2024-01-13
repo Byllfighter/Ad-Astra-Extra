@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "adastraextra:block/deimos_rock_slab"
+    },
+    "type=top": {
+      "model": "adastraextra:block/deimos_rock_slab_top"
+    },
+    "type=double": {
+      "model": "adastraextra:block/deimos_rock_slab_full"
+    }
+  }
+}

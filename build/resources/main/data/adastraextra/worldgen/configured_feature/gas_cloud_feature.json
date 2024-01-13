@@ -1,0 +1,18 @@
+{
+  "type": "adastraextra:gas_cloud_feature",
+  "config": {
+    "size": 60,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "block_match",
+          "block": "minecraft:air"
+        },
+        "state": {
+          "Name": "adastraextra:gas_cloud"
+        }
+      }
+    ]
+  }
+}

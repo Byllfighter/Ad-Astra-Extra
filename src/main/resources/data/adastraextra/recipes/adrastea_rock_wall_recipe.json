@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "adastraextra:adrastea_rock"
+    }
+  },
+  "result": {
+    "item": "adastraextra:adrastea_rock_wall",
+    "count": 6
+  }
+}

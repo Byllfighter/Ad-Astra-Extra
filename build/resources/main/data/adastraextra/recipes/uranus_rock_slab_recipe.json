@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "adastraextra:uranus_rock"
+    }
+  },
+  "result": {
+    "item": "adastraextra:uranus_rock",
+    "count": 6
+  }
+}

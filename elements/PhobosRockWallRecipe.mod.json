@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 6,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:PhobosRock"
+      },
+      {
+        "value": "CUSTOM:PhobosRock"
+      },
+      {
+        "value": "CUSTOM:PhobosRock"
+      },
+      {
+        "value": "CUSTOM:PhobosRock"
+      },
+      {
+        "value": "CUSTOM:PhobosRock"
+      },
+      {
+        "value": "CUSTOM:PhobosRock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PhobosRockWall"
+    },
+    "name": "phobos_rock_wall_recipe",
+    "namespace": "mod"
+  }
+}

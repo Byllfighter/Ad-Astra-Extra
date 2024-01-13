@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "adastraextra:jupiter_rock_stairs",
+    "adastraextra:saturn_rock_stairs",
+    "adastraextra:uranus_rock_stairs",
+    "adastraextra:neptune_rock_stairs",
+    "adastraextra:phobos_rock_stairs",
+    "adastraextra:deimos_rock_stairs"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "adastraextra:metis_rock"
+    }
+  },
+  "result": {
+    "item": "adastraextra:metis_rock_slab",
+    "count": 6
+  }
+}

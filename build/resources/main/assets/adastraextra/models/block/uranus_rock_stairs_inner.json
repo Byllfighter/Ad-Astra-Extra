@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "adastraextra:block/uranusrock",
+    "top": "adastraextra:block/uranusrock",
+    "side": "adastraextra:block/uranusrock"
+  },
+  "render_type": "solid"
+}

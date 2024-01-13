@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "adastraextra:block/amalthearock",
+    "top": "adastraextra:block/amalthearock",
+    "side": "adastraextra:block/amalthearock"
+  },
+  "render_type": "solid"
+}
