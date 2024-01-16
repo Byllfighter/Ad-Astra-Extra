@@ -7,6 +7,7 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "minecraft:beach": "2024-01-16 16:37:18 +0200",
       "minecraft:plains": "2024-01-03 13:41:14 +0200"
     },
     "done": false

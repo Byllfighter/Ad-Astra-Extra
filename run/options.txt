@@ -37,11 +37,11 @@ entityDistanceScaling:1.0
 guiScale:2
 particles:0
 maxFps:260
-graphicsMode:0
+graphicsMode:1
 ao:false
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
-renderClouds:"false"
+renderClouds:"true"
 resourcePacks:[]
 incompatibleResourcePacks:[]
 lastServer:localhost:25463

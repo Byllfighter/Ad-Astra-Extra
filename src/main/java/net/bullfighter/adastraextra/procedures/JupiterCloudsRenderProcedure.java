@@ -195,6 +195,7 @@ public class JupiterCloudsRenderProcedure {
 			RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
 			execute(_provider, level.dimension());
 			RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
+			RenderSystem.colorMask(true, true, true, true);
 			RenderSystem.enableCull();
 			RenderSystem.enableDepthTest();
 			RenderSystem.disableBlend();
@@ -213,6 +214,11 @@ public class JupiterCloudsRenderProcedure {
 			RenderSystem.enableBlend();
 			RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA);
 			setScale(12, 4, 12);
+			{
+				ResourceLocation _texturelocation = new ResourceLocation(("minecraft" + ":textures/" + "environment/clouds" + ".png"));
+				RenderSystem.setShaderTexture(0, _texturelocation);
+				Minecraft.getInstance().getTextureManager().bindForSetup(_texturelocation);
+			}
 			renderClouds(0, 192, 0, 0, (int) (255 << 24 | 255 << 16 | 198 << 8 | 113));
 		}
 	}

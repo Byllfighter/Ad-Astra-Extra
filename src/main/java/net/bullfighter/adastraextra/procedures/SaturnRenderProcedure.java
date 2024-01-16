@@ -274,6 +274,12 @@ public class SaturnRenderProcedure {
 		RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
 	}
 
+	private static void renderEndsky() {
+		RenderSystem.setShaderTexture(0, new ResourceLocation("minecraft:textures/environment/end_sky.png"));
+		RenderSystem.defaultBlendFunc();
+		renderEndsky(0.0F, 0.0F, 0.0F, -14145496);
+	}
+
 	private static void renderEndsky(float yaw, float pitch, float roll, int color) {
 		PoseStack poseStack = _provider.getPoseStack();
 		poseStack.pushPose();
@@ -461,40 +467,40 @@ public class SaturnRenderProcedure {
 		for (int i = 0; i < 6; ++i) {
 			switch (i) {
 				case 0 :
-					bufferBuilder.vertex(100.0F, -100.0F, 100.0F).uv(0.0F, 0.0F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(100.0F, -100.0F, -100.0F).uv(0.0F, 1.0F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(-100.0F, -100.0F, -100.0F).uv(1.0F, 1.0F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(-100.0F, -100.0F, 100.0F).uv(1.0F, 0.0F).color(255, 255, 255, 255).endVertex();
-					break;
-				case 1 :
-					bufferBuilder.vertex(100.0F, 100.0F, -100.0F).uv(0.0F, 0.0F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(100.0F, 100.0F, 100.0F).uv(0.0F, 1.0F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(-100.0F, 100.0F, 100.0F).uv(1.0F, 1.0F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(-100.0F, 100.0F, -100.0F).uv(1.0F, 0.0F).color(255, 255, 255, 255).endVertex();
-					break;
-				case 2 :
-					bufferBuilder.vertex(-100.0F, -100.0F, 100.0F).uv(0.0F, 0.0F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(-100.0F, 100.0F, 100.0F).uv(0.0F, 1.0F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(100.0F, 100.0F, 100.0F).uv(1.0F, 1.0F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(100.0F, -100.0F, 100.0F).uv(1.0F, 0.0F).color(255, 255, 255, 255).endVertex();
-					break;
-				case 3 :
-					bufferBuilder.vertex(100.0F, -100.0F, 100.0F).uv(0.0F, 0.0F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(100.0F, 100.0F, 100.0F).uv(0.0F, 1.0F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(100.0F, 100.0F, -100.0F).uv(1.0F, 1.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(-100.0F, -100.0F, -100.0F).uv(0.0F, 0.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(-100.0F, -100.0F, 100.0F).uv(0.0F, 1.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(100.0F, -100.0F, 100.0F).uv(1.0F, 1.0F).color(255, 255, 255, 255).endVertex();
 					bufferBuilder.vertex(100.0F, -100.0F, -100.0F).uv(1.0F, 0.0F).color(255, 255, 255, 255).endVertex();
 					break;
+				case 1 :
+					bufferBuilder.vertex(-100.0F, 100.0F, 100.0F).uv(0.0F, 0.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(-100.0F, 100.0F, -100.0F).uv(0.0F, 1.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(100.0F, 100.0F, -100.0F).uv(1.0F, 1.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(100.0F, 100.0F, 100.0F).uv(1.0F, 0.0F).color(255, 255, 255, 255).endVertex();
+					break;
+				case 2 :
+					bufferBuilder.vertex(100.0F, 100.0F, 100.0F).uv(0.0F, 0.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(100.0F, -100.0F, 100.0F).uv(0.0F, 1.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(-100.0F, -100.0F, 100.0F).uv(1.0F, 1.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(-100.0F, 100.0F, 100.0F).uv(1.0F, 0.0F).color(255, 255, 255, 255).endVertex();
+					break;
+				case 3 :
+					bufferBuilder.vertex(-100.0F, 100.0F, 100.0F).uv(0.0F, 0.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(-100.0F, -100.0F, 100.0F).uv(0.0F, 1.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(-100.0F, -100.0F, -100.0F).uv(1.0F, 1.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(-100.0F, 100.0F, -100.0F).uv(1.0F, 0.0F).color(255, 255, 255, 255).endVertex();
+					break;
 				case 4 :
-					bufferBuilder.vertex(100.0F, -100.0F, -100.0F).uv(0.0F, 0.0F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(100.0F, 100.0F, -100.0F).uv(0.0F, 1.0F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(-100.0F, 100.0F, -100.0F).uv(1.0F, 1.0F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(-100.0F, -100.0F, -100.0F).uv(1.0F, 0.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(-100.0F, 100.0F, -100.0F).uv(0.0F, 0.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(-100.0F, -100.0F, -100.0F).uv(0.0F, 1.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(100.0F, -100.0F, -100.0F).uv(1.0F, 1.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(100.0F, 100.0F, -100.0F).uv(1.0F, 0.0F).color(255, 255, 255, 255).endVertex();
 					break;
 				case 5 :
-					bufferBuilder.vertex(-100.0F, -100.0F, -100.0F).uv(0.0F, 0.0F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(-100.0F, 100.0F, -100.0F).uv(0.0F, 1.0F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(-100.0F, 100.0F, 100.0F).uv(1.0F, 1.0F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(-100.0F, -100.0F, 100.0F).uv(1.0F, 0.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(100.0F, 100.0F, -100.0F).uv(0.0F, 0.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(100.0F, -100.0F, -100.0F).uv(0.0F, 1.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(100.0F, -100.0F, 100.0F).uv(1.0F, 1.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(100.0F, 100.0F, 100.0F).uv(1.0F, 0.0F).color(255, 255, 255, 255).endVertex();
 					break;
 			}
 		}
@@ -545,40 +551,40 @@ public class SaturnRenderProcedure {
 		for (int i = 0; i < 6; ++i) {
 			switch (i) {
 				case 0 :
-					bufferBuilder.vertex(100.0F, -100.0F, 100.0F).uv(1.0F / 3.0F, 0.0F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(100.0F, -100.0F, -100.0F).uv(1.0F / 3.0F, 0.5F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(-100.0F, -100.0F, -100.0F).uv(2.0F / 3.0F, 0.5F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(-100.0F, -100.0F, 100.0F).uv(2.0F / 3.0F, 0.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(-100.0F, -100.0F, -100.0F).uv(0.0F, 0.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(-100.0F, -100.0F, 100.0F).uv(0.0F, 0.5F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(100.0F, -100.0F, 100.0F).uv(1.0F / 3.0F, 0.5F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(100.0F, -100.0F, -100.0F).uv(1.0F / 3.0F, 0.0F).color(255, 255, 255, 255).endVertex();
 					break;
 				case 1 :
-					bufferBuilder.vertex(100.0F, 100.0F, -100.0F).uv(0.0F, 0.0F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(100.0F, 100.0F, 100.0F).uv(0.0F, 0.5F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(-100.0F, 100.0F, 100.0F).uv(1.0F / 3.0F, 0.5F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(-100.0F, 100.0F, -100.0F).uv(1.0F / 3.0F, 0.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(-100.0F, 100.0F, 100.0F).uv(1.0F / 3.0F, 0.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(-100.0F, 100.0F, -100.0F).uv(1.0F / 3.0F, 0.5F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(100.0F, 100.0F, -100.0F).uv(2.0F / 3.0F, 0.5F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(100.0F, 100.0F, 100.0F).uv(2.0F / 3.0F, 0.0F).color(255, 255, 255, 255).endVertex();
 					break;
 				case 2 :
-					bufferBuilder.vertex(-100.0F, -100.0F, 100.0F).uv(2.0F / 3.0F, 0.0F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(-100.0F, 100.0F, 100.0F).uv(2.0F / 3.0F, 0.5F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(100.0F, 100.0F, 100.0F).uv(1.0F, 0.5F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(100.0F, -100.0F, 100.0F).uv(1.0F, 0.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(100.0F, 100.0F, 100.0F).uv(2.0F / 3.0F, 0.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(100.0F, -100.0F, 100.0F).uv(2.0F / 3.0F, 0.5F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(-100.0F, -100.0F, 100.0F).uv(1.0F, 0.5F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(-100.0F, 100.0F, 100.0F).uv(1.0F, 0.0F).color(255, 255, 255, 255).endVertex();
 					break;
 				case 3 :
-					bufferBuilder.vertex(100.0F, -100.0F, 100.0F).uv(0.0F, 0.5F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(100.0F, 100.0F, 100.0F).uv(0.0F, 1.0F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(100.0F, 100.0F, -100.0F).uv(1.0F / 3.0F, 1.0F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(100.0F, -100.0F, -100.0F).uv(1.0F / 3.0F, 0.5F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(-100.0F, 100.0F, 100.0F).uv(0.0F, 0.5F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(-100.0F, -100.0F, 100.0F).uv(0.0F, 1.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(-100.0F, -100.0F, -100.0F).uv(1.0F / 3.0F, 1.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(-100.0F, 100.0F, -100.0F).uv(1.0F / 3.0F, 0.5F).color(255, 255, 255, 255).endVertex();
 					break;
 				case 4 :
-					bufferBuilder.vertex(100.0F, -100.0F, -100.0F).uv(1.0F / 3.0F, 0.5F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(100.0F, 100.0F, -100.0F).uv(1.0F / 3.0F, 1.0F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(-100.0F, 100.0F, -100.0F).uv(2.0F / 3.0F, 1.0F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(-100.0F, -100.0F, -100.0F).uv(2.0F / 3.0F, 0.5F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(-100.0F, 100.0F, -100.0F).uv(1.0F / 3.0F, 0.5F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(-100.0F, -100.0F, -100.0F).uv(1.0F / 3.0F, 1.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(100.0F, -100.0F, -100.0F).uv(2.0F / 3.0F, 1.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(100.0F, 100.0F, -100.0F).uv(2.0F / 3.0F, 0.5F).color(255, 255, 255, 255).endVertex();
 					break;
 				case 5 :
-					bufferBuilder.vertex(-100.0F, -100.0F, -100.0F).uv(2.0F / 3.0F, 0.5F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(-100.0F, 100.0F, -100.0F).uv(2.0F / 3.0F, 1.0F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(-100.0F, 100.0F, 100.0F).uv(1.0F, 1.0F).color(255, 255, 255, 255).endVertex();
-					bufferBuilder.vertex(-100.0F, -100.0F, 100.0F).uv(1.0F, 0.5F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(100.0F, 100.0F, -100.0F).uv(2.0F / 3.0F, 0.5F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(100.0F, -100.0F, -100.0F).uv(2.0F / 3.0F, 1.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(100.0F, -100.0F, 100.0F).uv(1.0F, 1.0F).color(255, 255, 255, 255).endVertex();
+					bufferBuilder.vertex(100.0F, 100.0F, 100.0F).uv(1.0F, 0.5F).color(255, 255, 255, 255).endVertex();
 					break;
 			}
 		}
@@ -595,6 +601,44 @@ public class SaturnRenderProcedure {
 		}
 		RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
 		poseStack.popPose();
+	}
+
+	private static void renderSky(boolean abyss, boolean deepsky, boolean moon, boolean stars, boolean sun, boolean sunlights) {
+		Minecraft minecraft = Minecraft.getInstance();
+		ClientLevel level = minecraft.level;
+		float partialTick = _provider.getPartialTick();
+		if (deepsky) {
+			Vec3 color = level.getSkyColor(minecraft.gameRenderer.getMainCamera().getPosition(), partialTick);
+			RenderSystem.defaultBlendFunc();
+			renderDeepsky(255 << 24 | (int) (color.x() * 255.0D) << 16 | (int) (color.y() * 255.0D) << 8 | (int) (color.z() * 255.0D));
+		}
+		if (sunlights) {
+			float[] color = level.effects().getSunriseColor(level.getTimeOfDay(partialTick), partialTick);
+			if (color != null) {
+				RenderSystem.defaultBlendFunc();
+				renderSunlights((int) (color[3] * 255.0F) << 24 | (int) (color[0] * 255.0F) << 16 | (int) (color[1] * 255.0F) << 8 | (int) (color[2] * 255.0F));
+			}
+		}
+		if (sun) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("minecraft:textures/environment/sun.png"));
+			RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
+			renderSun(60.0F, level.getTimeOfDay(partialTick) * 360.0F, -1, false);
+		}
+		if (moon) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("minecraft:textures/environment/moon_phases.png"));
+			RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
+			renderMoon(40.0F, level.getTimeOfDay(partialTick) * 360.0F, -1, true, false);
+		}
+		if (stars) {
+			int color = (int) (level.getStarBrightness(partialTick) * 255.0F);
+			RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
+			renderStars(1500, 10842, 90.0F, level.getTimeOfDay(partialTick) * 360.0F, 0.0F, color << 24 | color << 16 | color << 8 | color, false);
+		}
+		if (abyss) {
+			RenderSystem.defaultBlendFunc();
+			renderAbyss(-16777216, false);
+		}
+		RenderSystem.defaultBlendFunc();
 	}
 
 	private static void renderSkybox(int mode, float yaw, float pitch, float roll, int color, boolean constant) {
@@ -784,49 +828,6 @@ public class SaturnRenderProcedure {
 		poseStack.popPose();
 	}
 
-	private static void renderVanillasky(boolean abyss, boolean deepsky, boolean endsky, boolean moon, boolean stars, boolean sun, boolean sunlights) {
-		Minecraft minecraft = Minecraft.getInstance();
-		ClientLevel level = minecraft.level;
-		float partialTick = _provider.getPartialTick();
-		if (endsky) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("minecraft:textures/environment/end_sky.png"));
-			RenderSystem.defaultBlendFunc();
-			renderEndsky(0.0F, 0.0F, 0.0F, -14145496);
-		}
-		if (deepsky) {
-			Vec3 color = level.getSkyColor(minecraft.gameRenderer.getMainCamera().getPosition(), partialTick);
-			RenderSystem.defaultBlendFunc();
-			renderDeepsky(255 << 24 | (int) (color.x() * 255.0D) << 16 | (int) (color.y() * 255.0D) << 8 | (int) (color.z() * 255.0D));
-		}
-		if (sunlights) {
-			float[] color = level.effects().getSunriseColor(level.getTimeOfDay(partialTick), partialTick);
-			if (color != null) {
-				RenderSystem.defaultBlendFunc();
-				renderSunlights((int) (color[3] * 255.0F) << 24 | (int) (color[0] * 255.0F) << 16 | (int) (color[1] * 255.0F) << 8 | (int) (color[2] * 255.0F));
-			}
-		}
-		if (sun) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("minecraft:textures/environment/sun.png"));
-			RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
-			renderSun(60.0F, level.getTimeOfDay(partialTick) * 360.0F, -1, false);
-		}
-		if (moon) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("minecraft:textures/environment/moon_phases.png"));
-			RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
-			renderMoon(40.0F, level.getTimeOfDay(partialTick) * 360.0F, -1, true, false);
-		}
-		if (stars) {
-			int color = (int) (level.getStarBrightness(partialTick) * 255.0F);
-			RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
-			renderStars(1500, 10842, 90.0F, level.getTimeOfDay(partialTick) * 360.0F, 0.0F, color << 24 | color << 16 | color << 8 | color, false);
-		}
-		if (abyss) {
-			RenderSystem.defaultBlendFunc();
-			renderAbyss(-16777216, false);
-		}
-		RenderSystem.defaultBlendFunc();
-	}
-
 	@SubscribeEvent
 	public static void renderSky(RenderLevelStageEvent event) {
 		_provider = event;
@@ -848,6 +849,7 @@ public class SaturnRenderProcedure {
 			RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
 			execute(_provider, level, level.dimension());
 			RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
+			RenderSystem.colorMask(true, true, true, true);
 			RenderSystem.enableCull();
 			RenderSystem.enableDepthTest();
 			RenderSystem.disableBlend();
