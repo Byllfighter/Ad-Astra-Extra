@@ -1,25 +1,17 @@
 
 package net.bullfighter.adastraextra.world.dimension;
 
-import org.joml.Matrix4f;
-
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.client.event.RegisterDimensionSpecialEffectsEvent;
-import net.minecraftforge.api.distmarker.Dist;
+import net.neoforged.neoforge.client.event.RegisterDimensionSpecialEffectsEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.client.renderer.LightTexture;
 import net.minecraft.client.renderer.DimensionSpecialEffects;
-import net.minecraft.client.multiplayer.ClientLevel;
-import net.minecraft.client.Camera;
 
-import com.mojang.blaze3d.vertex.PoseStack;
-
-@Mod.EventBusSubscriber
 public class JupiterOrbitDimension {
-	@Mod.EventBusSubscriber(value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
+	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class DimensionSpecialEffectsHandler {
 		@SubscribeEvent
 		public static void registerDimensionSpecialEffects(RegisterDimensionSpecialEffectsEvent event) {
@@ -32,26 +24,6 @@ public class JupiterOrbitDimension {
 				@Override
 				public boolean isFoggyAt(int x, int y) {
 					return false;
-				}
-
-				@Override
-				public boolean renderClouds(ClientLevel level, int ticks, float partialTick, PoseStack poseStack, double camX, double camY, double camZ, Matrix4f projectionMatrix) {
-					return true;
-				}
-
-				@Override
-				public boolean renderSky(ClientLevel level, int ticks, float partialTick, PoseStack poseStack, Camera camera, Matrix4f projectionMatrix, boolean isFoggy, Runnable setupFog) {
-					return true;
-				}
-
-				@Override
-				public boolean renderSnowAndRain(ClientLevel level, int ticks, float partialTick, LightTexture lightTexture, double camX, double camY, double camZ) {
-					return true;
-				}
-
-				@Override
-				public boolean tickRain(ClientLevel level, int ticks, Camera camera) {
-					return true;
 				}
 			};
 			event.register(new ResourceLocation("adastraextra:jupiter_orbit"), customEffect);

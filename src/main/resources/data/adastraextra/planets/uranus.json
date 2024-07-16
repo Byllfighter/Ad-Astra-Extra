@@ -1,0 +1,11 @@
+{
+  "dimension": "adastraextra:uranus",
+  "gravity": 8.87,
+  "orbit": "adastraextra:uranus_orbit",
+  "oxygen": false,
+  "solar_power": 6,
+  "solar_system": "ad_astra:solar_system",
+  "temperature": -195,
+  "tier": 4,
+  "additional_launch_dimensions": []
+}

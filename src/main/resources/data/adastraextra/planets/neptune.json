@@ -1,0 +1,11 @@
+{
+  "dimension": "adastraextra:neptune",
+  "gravity": 11.15,
+  "orbit": "adastraextra:neptune_orbit",
+  "oxygen": false,
+  "solar_power": 5,
+  "solar_system": "ad_astra:solar_system",
+  "temperature": -214,
+  "tier": 4,
+  "additional_launch_dimensions": []
+}

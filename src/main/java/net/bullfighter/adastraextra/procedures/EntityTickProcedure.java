@@ -1,9 +1,9 @@
 package net.bullfighter.adastraextra.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingEvent;
+import net.neoforged.neoforge.event.entity.living.LivingEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.LevelAccessor;
@@ -44,7 +44,7 @@ public class EntityTickProcedure {
 		if (entity.getPersistentData().getDouble("adastraextraGassed") > 0) {
 			entity.getPersistentData().putDouble("adastraextraGassed", (entity.getPersistentData().getDouble("adastraextraGassed") - 0.25));
 		}
-		if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("adastraextra:jupiter")))) {
+		if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("adastraextra:jupiter"))) {
 			if (Math.random() < 0.01) {
 				lightningx = x + Mth.nextInt(RandomSource.create(), -60, 60);
 				lightningz = z + Mth.nextInt(RandomSource.create(), -60, 60);

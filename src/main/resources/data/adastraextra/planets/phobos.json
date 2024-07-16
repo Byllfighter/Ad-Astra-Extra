@@ -1,0 +1,11 @@
+{
+  "dimension": "adastraextra:phobos",
+  "gravity": 11.15,
+  "orbit": "adastraextra:phobos_orbit",
+  "oxygen": false,
+  "solar_power": 12,
+  "solar_system": "ad_astra:solar_system",
+  "temperature": -40,
+  "tier": 3,
+  "additional_launch_dimensions": []
+}

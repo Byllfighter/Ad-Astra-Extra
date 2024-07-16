@@ -10,6 +10,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/adastraextra/blockstates/jupiter_rock.json",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/jupiter_rock.json",
           "src/main/resources/assets/adastraextra/models/block/jupiter_rock.json",
           "src/main/resources/assets/adastraextra/models/item/jupiter_rock.json",
           "src/main/java/net/bullfighter/adastraextra/block/JupiterRockBlock.java"
@@ -75,29 +76,6 @@
       }
     },
     {
-      "name": "JupiterRender",
-      "type": "procedure",
-      "sortid": 5,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "jupiter_render",
-      "metadata": {
-        "files": [
-          "src/main/java/net/bullfighter/adastraextra/procedures/JupiterRenderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "dimension",
-            "type": "dimensiontype"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "GasCloud",
       "type": "block",
       "sortid": 7,
@@ -107,6 +85,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/adastraextra/blockstates/gas_cloud.json",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/gas_cloud.json",
           "src/main/resources/assets/adastraextra/models/block/gas_cloud.json",
           "src/main/resources/assets/adastraextra/models/item/gas_cloud.json",
           "src/main/java/net/bullfighter/adastraextra/block/GasCloudBlock.java"
@@ -123,9 +102,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/bullfighter/adastraextra/world/features/GasCloudFeatureFeature.java",
-          "src/main/resources/data/adastraextra/forge/biome_modifier/gas_cloud_feature_biome_modifier.json",
           "src/main/resources/data/adastraextra/worldgen/placed_feature/gas_cloud_feature.json",
-          "src/main/resources/data/adastraextra/worldgen/configured_feature/gas_cloud_feature.json"
+          "src/main/resources/data/adastraextra/worldgen/configured_feature/gas_cloud_feature.json",
+          "src/main/resources/data/adastraextra/neoforge/biome_modifier/gas_cloud_feature_biome_modifier.json"
         ]
       }
     },
@@ -235,6 +214,7 @@
         "files": [
           "src/main/resources/assets/adastraextra/models/block/saturn_rock.json",
           "src/main/java/net/bullfighter/adastraextra/block/SaturnRockBlock.java",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/saturn_rock.json",
           "src/main/resources/assets/adastraextra/models/item/saturn_rock.json",
           "src/main/resources/assets/adastraextra/blockstates/saturn_rock.json"
         ]
@@ -267,29 +247,6 @@
           "src/main/resources/data/adastraextra/dimension/saturn.json",
           "src/main/java/net/bullfighter/adastraextra/world/dimension/SaturnDimension.java",
           "src/main/resources/data/adastraextra/dimension_type/saturn.json"
-        ]
-      }
-    },
-    {
-      "name": "SaturnRender",
-      "type": "procedure",
-      "sortid": 18,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "saturn_render",
-      "metadata": {
-        "files": [
-          "src/main/java/net/bullfighter/adastraextra/procedures/SaturnRenderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "dimension",
-            "type": "dimensiontype"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       }
     },
@@ -363,6 +320,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/adastraextra/models/item/uranus_rock.json",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/uranus_rock.json",
           "src/main/resources/assets/adastraextra/blockstates/uranus_rock.json",
           "src/main/resources/assets/adastraextra/models/block/uranus_rock.json",
           "src/main/java/net/bullfighter/adastraextra/block/UranusRockBlock.java"
@@ -413,29 +371,6 @@
       }
     },
     {
-      "name": "UranusRender",
-      "type": "procedure",
-      "sortid": 29,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "uranus_render",
-      "metadata": {
-        "files": [
-          "src/main/java/net/bullfighter/adastraextra/procedures/UranusRenderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "dimension",
-            "type": "dimensiontype"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "UranusFrozenPlains",
       "type": "biome",
       "sortid": 30,
@@ -460,7 +395,8 @@
           "src/main/resources/assets/adastraextra/models/item/neptune_rock.json",
           "src/main/resources/assets/adastraextra/blockstates/neptune_rock.json",
           "src/main/resources/assets/adastraextra/models/block/neptune_rock.json",
-          "src/main/java/net/bullfighter/adastraextra/block/NeptuneRockBlock.java"
+          "src/main/java/net/bullfighter/adastraextra/block/NeptuneRockBlock.java",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/neptune_rock.json"
         ]
       }
     },
@@ -508,42 +444,6 @@
       }
     },
     {
-      "name": "NeptuneRender",
-      "type": "procedure",
-      "sortid": 36,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "neptune_render",
-      "metadata": {
-        "files": [
-          "src/main/java/net/bullfighter/adastraextra/procedures/NeptuneRenderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "dimension",
-            "type": "dimensiontype"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "StoneCraftingMaterials",
-      "type": "tag",
-      "sortid": 37,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stone_crafting_materials",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/tags/items/stone_crafting_materials.json"
-        ]
-      }
-    },
-    {
       "name": "JupiterRockSlab",
       "type": "block",
       "sortid": 38,
@@ -552,6 +452,7 @@
       "registry_name": "jupiter_rock_slab",
       "metadata": {
         "files": [
+          "src/main/resources/data/adastraextra/loot_tables/blocks/jupiter_rock_slab.json",
           "src/main/resources/assets/adastraextra/models/block/jupiter_rock_slab_full.json",
           "src/main/resources/assets/adastraextra/models/block/jupiter_rock_slab.json",
           "src/main/java/net/bullfighter/adastraextra/block/JupiterRockSlabBlock.java",
@@ -574,6 +475,7 @@
           "src/main/java/net/bullfighter/adastraextra/block/SaturnRockSlabBlock.java",
           "src/main/resources/assets/adastraextra/models/item/saturn_rock_slab.json",
           "src/main/resources/assets/adastraextra/blockstates/saturn_rock_slab.json",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/saturn_rock_slab.json",
           "src/main/resources/assets/adastraextra/models/block/saturn_rock_slab_full.json",
           "src/main/resources/assets/adastraextra/models/block/saturn_rock_slab_top.json"
         ]
@@ -593,7 +495,8 @@
           "src/main/resources/assets/adastraextra/models/block/uranus_rock_slab_top.json",
           "src/main/resources/assets/adastraextra/models/item/uranus_rock_slab.json",
           "src/main/resources/assets/adastraextra/blockstates/uranus_rock_slab.json",
-          "src/main/java/net/bullfighter/adastraextra/block/UranusRockSlabBlock.java"
+          "src/main/java/net/bullfighter/adastraextra/block/UranusRockSlabBlock.java",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/uranus_rock_slab.json"
         ]
       }
     },
@@ -606,38 +509,13 @@
       "registry_name": "neptune_rock_slab",
       "metadata": {
         "files": [
+          "src/main/resources/data/adastraextra/loot_tables/blocks/neptune_rock_slab.json",
           "src/main/java/net/bullfighter/adastraextra/block/NeptuneRockSlabBlock.java",
           "src/main/resources/assets/adastraextra/models/item/neptune_rock_slab.json",
           "src/main/resources/assets/adastraextra/blockstates/neptune_rock_slab.json",
           "src/main/resources/assets/adastraextra/models/block/neptune_rock_slab_top.json",
           "src/main/resources/assets/adastraextra/models/block/neptune_rock_slab_full.json",
           "src/main/resources/assets/adastraextra/models/block/neptune_rock_slab.json"
-        ]
-      }
-    },
-    {
-      "name": "Slabs",
-      "type": "tag",
-      "sortid": 42,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "slabs",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/tags/items/slabs.json"
-        ]
-      }
-    },
-    {
-      "name": "StoneToolMaterials",
-      "type": "tag",
-      "sortid": 47,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stone_tool_materials",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/tags/items/stone_tool_materials.json"
         ]
       }
     },
@@ -653,6 +531,7 @@
           "src/main/resources/assets/adastraextra/models/block/jupiter_rock_stairs_outer.json",
           "src/main/resources/assets/adastraextra/models/item/jupiter_rock_stairs.json",
           "src/main/java/net/bullfighter/adastraextra/block/JupiterRockStairsBlock.java",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/jupiter_rock_stairs.json",
           "src/main/resources/assets/adastraextra/models/block/jupiter_rock_stairs.json",
           "src/main/resources/assets/adastraextra/blockstates/jupiter_rock_stairs.json",
           "src/main/resources/assets/adastraextra/models/block/jupiter_rock_stairs_inner.json"
@@ -669,6 +548,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/adastraextra/blockstates/saturn_rock_stairs.json",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/saturn_rock_stairs.json",
           "src/main/resources/assets/adastraextra/models/block/saturn_rock_stairs_inner.json",
           "src/main/java/net/bullfighter/adastraextra/block/SaturnRockStairsBlock.java",
           "src/main/resources/assets/adastraextra/models/item/saturn_rock_stairs.json",
@@ -690,6 +570,7 @@
           "src/main/resources/assets/adastraextra/models/block/uranus_rock_stairs_inner.json",
           "src/main/resources/assets/adastraextra/models/item/uranus_rock_stairs.json",
           "src/main/resources/assets/adastraextra/models/block/uranus_rock_stairs_outer.json",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/uranus_rock_stairs.json",
           "src/main/resources/assets/adastraextra/blockstates/uranus_rock_stairs.json",
           "src/main/java/net/bullfighter/adastraextra/block/UranusRockStairsBlock.java"
         ]
@@ -706,23 +587,11 @@
         "files": [
           "src/main/resources/assets/adastraextra/blockstates/neptune_rock_stairs.json",
           "src/main/resources/assets/adastraextra/models/block/neptune_rock_stairs.json",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/neptune_rock_stairs.json",
           "src/main/resources/assets/adastraextra/models/item/neptune_rock_stairs.json",
           "src/main/java/net/bullfighter/adastraextra/block/NeptuneRockStairsBlock.java",
           "src/main/resources/assets/adastraextra/models/block/neptune_rock_stairs_inner.json",
           "src/main/resources/assets/adastraextra/models/block/neptune_rock_stairs_outer.json"
-        ]
-      }
-    },
-    {
-      "name": "StairsTag",
-      "type": "tag",
-      "sortid": 48,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stairs_tag",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/tags/items/stairs.json"
         ]
       }
     },
@@ -739,6 +608,7 @@
           "src/main/resources/assets/adastraextra/blockstates/jupiter_rock_wall.json",
           "src/main/resources/assets/adastraextra/models/block/jupiter_rock_wall_post.json",
           "src/main/resources/assets/adastraextra/models/item/jupiter_rock_wall.json",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/jupiter_rock_wall.json",
           "src/main/resources/assets/adastraextra/models/block/jupiter_rock_wall_inventory.json",
           "src/main/resources/assets/adastraextra/models/block/jupiter_rock_wall_side_tall.json",
           "src/main/resources/assets/adastraextra/models/block/jupiter_rock_wall.json"
@@ -757,6 +627,7 @@
           "src/main/resources/assets/adastraextra/blockstates/saturn_rock_wall.json",
           "src/main/java/net/bullfighter/adastraextra/block/SaturnRockWallBlock.java",
           "src/main/resources/assets/adastraextra/models/item/saturn_rock_wall.json",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/saturn_rock_wall.json",
           "src/main/resources/assets/adastraextra/models/block/saturn_rock_wall_post.json",
           "src/main/resources/assets/adastraextra/models/block/saturn_rock_wall_side_tall.json",
           "src/main/resources/assets/adastraextra/models/block/saturn_rock_wall.json",
@@ -779,6 +650,7 @@
           "src/main/resources/assets/adastraextra/blockstates/uranus_rock_wall.json",
           "src/main/resources/assets/adastraextra/models/block/uranus_rock_wall.json",
           "src/main/resources/assets/adastraextra/models/block/uranus_rock_wall_inventory.json",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/uranus_rock_wall.json",
           "src/main/resources/assets/adastraextra/models/item/uranus_rock_wall.json"
         ]
       }
@@ -796,61 +668,10 @@
           "src/main/java/net/bullfighter/adastraextra/block/NeptuneRockWallBlock.java",
           "src/main/resources/assets/adastraextra/models/block/neptune_rock_wall.json",
           "src/main/resources/assets/adastraextra/models/block/neptune_rock_wall_post.json",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/neptune_rock_wall.json",
           "src/main/resources/assets/adastraextra/models/item/neptune_rock_wall.json",
           "src/main/resources/assets/adastraextra/blockstates/neptune_rock_wall.json",
           "src/main/resources/assets/adastraextra/models/block/neptune_rock_wall_side_tall.json"
-        ]
-      }
-    },
-    {
-      "name": "Walls",
-      "type": "tag",
-      "sortid": 53,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "walls",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/tags/items/walls.json"
-        ]
-      }
-    },
-    {
-      "name": "SlabsBlock",
-      "type": "tag",
-      "sortid": 54,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "slabs_block",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/tags/blocks/slabs.json"
-        ]
-      }
-    },
-    {
-      "name": "StairsBlock",
-      "type": "tag",
-      "sortid": 55,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stairs_block",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/tags/blocks/stairs.json"
-        ]
-      }
-    },
-    {
-      "name": "WallsBlock",
-      "type": "tag",
-      "sortid": 56,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "walls_block",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/tags/blocks/walls.json"
         ]
       }
     },
@@ -1177,6 +998,7 @@
         "files": [
           "src/main/resources/assets/adastraextra/models/item/phobos_rock.json",
           "src/main/resources/assets/adastraextra/blockstates/phobos_rock.json",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/phobos_rock.json",
           "src/main/resources/assets/adastraextra/models/block/phobos_rock.json",
           "src/main/java/net/bullfighter/adastraextra/block/PhobosRockBlock.java"
         ]
@@ -1226,29 +1048,6 @@
       }
     },
     {
-      "name": "PhobosRender",
-      "type": "procedure",
-      "sortid": 85,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "phobos_render",
-      "metadata": {
-        "files": [
-          "src/main/java/net/bullfighter/adastraextra/procedures/PhobosRenderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "dimension",
-            "type": "dimensiontype"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "DeimosRock",
       "type": "block",
       "sortid": 86,
@@ -1258,6 +1057,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/adastraextra/models/item/deimos_rock.json",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/deimos_rock.json",
           "src/main/java/net/bullfighter/adastraextra/block/DeimosRockBlock.java",
           "src/main/resources/assets/adastraextra/blockstates/deimos_rock.json",
           "src/main/resources/assets/adastraextra/models/block/deimos_rock.json"
@@ -1308,29 +1108,6 @@
       }
     },
     {
-      "name": "DeimosRender",
-      "type": "procedure",
-      "sortid": 90,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "deimos_render",
-      "metadata": {
-        "files": [
-          "src/main/java/net/bullfighter/adastraextra/procedures/DeimosRenderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "dimension",
-            "type": "dimensiontype"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "PhobosRockSlab",
       "type": "block",
       "sortid": 91,
@@ -1341,6 +1118,7 @@
         "files": [
           "src/main/resources/assets/adastraextra/blockstates/phobos_rock_slab.json",
           "src/main/resources/assets/adastraextra/models/block/phobos_rock_slab.json",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/phobos_rock_slab.json",
           "src/main/resources/assets/adastraextra/models/item/phobos_rock_slab.json",
           "src/main/java/net/bullfighter/adastraextra/block/PhobosRockSlabBlock.java",
           "src/main/resources/assets/adastraextra/models/block/phobos_rock_slab_top.json",
@@ -1358,6 +1136,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/adastraextra/models/item/deimos_rock_slab.json",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/deimos_rock_slab.json",
           "src/main/java/net/bullfighter/adastraextra/block/DeimosRockSlabBlock.java",
           "src/main/resources/assets/adastraextra/blockstates/deimos_rock_slab.json",
           "src/main/resources/assets/adastraextra/models/block/deimos_rock_slab.json",
@@ -1380,6 +1159,7 @@
           "src/main/java/net/bullfighter/adastraextra/block/PhobosRockStairsBlock.java",
           "src/main/resources/assets/adastraextra/blockstates/phobos_rock_stairs.json",
           "src/main/resources/assets/adastraextra/models/block/phobos_rock_stairs_inner.json",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/phobos_rock_stairs.json",
           "src/main/resources/assets/adastraextra/models/item/phobos_rock_stairs.json"
         ]
       }
@@ -1398,6 +1178,7 @@
           "src/main/resources/assets/adastraextra/models/block/deimos_rock_stairs_outer.json",
           "src/main/java/net/bullfighter/adastraextra/block/DeimosRockStairsBlock.java",
           "src/main/resources/assets/adastraextra/blockstates/deimos_rock_stairs.json",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/deimos_rock_stairs.json",
           "src/main/resources/assets/adastraextra/models/block/deimos_rock_stairs_inner.json"
         ]
       }
@@ -1416,6 +1197,7 @@
           "src/main/resources/assets/adastraextra/models/block/phobos_rock_wall_side_tall.json",
           "src/main/resources/assets/adastraextra/models/block/phobos_rock_wall_post.json",
           "src/main/java/net/bullfighter/adastraextra/block/PhobosRockWallBlock.java",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/phobos_rock_wall.json",
           "src/main/resources/assets/adastraextra/models/block/phobos_rock_wall.json",
           "src/main/resources/assets/adastraextra/blockstates/phobos_rock_wall.json"
         ]
@@ -1436,7 +1218,8 @@
           "src/main/resources/assets/adastraextra/blockstates/deimos_rock_wall.json",
           "src/main/resources/assets/adastraextra/models/item/deimos_rock_wall.json",
           "src/main/resources/assets/adastraextra/models/block/deimos_rock_wall_post.json",
-          "src/main/resources/assets/adastraextra/models/block/deimos_rock_wall_inventory.json"
+          "src/main/resources/assets/adastraextra/models/block/deimos_rock_wall_inventory.json",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/deimos_rock_wall.json"
         ]
       }
     },
@@ -1605,6 +1388,7 @@
       "registry_name": "metis_rock",
       "metadata": {
         "files": [
+          "src/main/resources/data/adastraextra/loot_tables/blocks/metis_rock.json",
           "src/main/java/net/bullfighter/adastraextra/block/MetisRockBlock.java",
           "src/main/resources/assets/adastraextra/models/item/metis_rock.json",
           "src/main/resources/assets/adastraextra/blockstates/metis_rock.json",
@@ -1656,29 +1440,6 @@
       }
     },
     {
-      "name": "MetisRender",
-      "type": "procedure",
-      "sortid": 113,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "metis_render",
-      "metadata": {
-        "files": [
-          "src/main/java/net/bullfighter/adastraextra/procedures/MetisRenderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "dimension",
-            "type": "dimensiontype"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "AdrasteaRock",
       "type": "block",
       "sortid": 114,
@@ -1690,6 +1451,7 @@
           "src/main/resources/assets/adastraextra/blockstates/adrastea_rock.json",
           "src/main/resources/assets/adastraextra/models/block/adrastea_rock.json",
           "src/main/resources/assets/adastraextra/models/item/adrastea_rock.json",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/adrastea_rock.json",
           "src/main/java/net/bullfighter/adastraextra/block/AdrasteaRockBlock.java"
         ]
       }
@@ -1738,29 +1500,6 @@
       }
     },
     {
-      "name": "AdrasteaRender",
-      "type": "procedure",
-      "sortid": 118,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "adrastea_render",
-      "metadata": {
-        "files": [
-          "src/main/java/net/bullfighter/adastraextra/procedures/AdrasteaRenderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "dimension",
-            "type": "dimensiontype"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "AmaltheaRock",
       "type": "block",
       "sortid": 119,
@@ -1770,6 +1509,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/adastraextra/models/item/amalthea_rock.json",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/amalthea_rock.json",
           "src/main/java/net/bullfighter/adastraextra/block/AmaltheaRockBlock.java",
           "src/main/resources/assets/adastraextra/blockstates/amalthea_rock.json",
           "src/main/resources/assets/adastraextra/models/block/amalthea_rock.json"
@@ -1820,48 +1560,6 @@
       }
     },
     {
-      "name": "AmaltheaRender",
-      "type": "procedure",
-      "sortid": 123,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "amalthea_render",
-      "metadata": {
-        "files": [
-          "src/main/java/net/bullfighter/adastraextra/procedures/AmaltheaRenderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "dimension",
-            "type": "dimensiontype"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "JupiterCloudsRender",
-      "type": "procedure",
-      "sortid": 124,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "jupiter_clouds_render",
-      "metadata": {
-        "files": [
-          "src/main/java/net/bullfighter/adastraextra/procedures/JupiterCloudsRenderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "dimension",
-            "type": "dimensiontype"
-          }
-        ]
-      }
-    },
-    {
       "name": "ThebeRock",
       "type": "block",
       "sortid": 125,
@@ -1870,6 +1568,7 @@
       "registry_name": "thebe_rock",
       "metadata": {
         "files": [
+          "src/main/resources/data/adastraextra/loot_tables/blocks/thebe_rock.json",
           "src/main/java/net/bullfighter/adastraextra/block/ThebeRockBlock.java",
           "src/main/resources/assets/adastraextra/models/item/thebe_rock.json",
           "src/main/resources/assets/adastraextra/models/block/thebe_rock.json",
@@ -1921,29 +1620,6 @@
       }
     },
     {
-      "name": "ThebeRender",
-      "type": "procedure",
-      "sortid": 129,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "thebe_render",
-      "metadata": {
-        "files": [
-          "src/main/java/net/bullfighter/adastraextra/procedures/ThebeRenderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "dimension",
-            "type": "dimensiontype"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "MetisRockSlab",
       "type": "block",
       "sortid": 130,
@@ -1957,6 +1633,7 @@
           "src/main/resources/assets/adastraextra/models/block/metis_rock_slab.json",
           "src/main/resources/assets/adastraextra/models/block/metis_rock_slab_full.json",
           "src/main/resources/assets/adastraextra/models/block/metis_rock_slab_top.json",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/metis_rock_slab.json",
           "src/main/resources/assets/adastraextra/blockstates/metis_rock_slab.json"
         ]
       }
@@ -1972,6 +1649,7 @@
         "files": [
           "src/main/java/net/bullfighter/adastraextra/block/AdrasteaRockSlabBlock.java",
           "src/main/resources/assets/adastraextra/models/block/adrastea_rock_slab_full.json",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/adrastea_rock_slab.json",
           "src/main/resources/assets/adastraextra/models/item/adrastea_rock_slab.json",
           "src/main/resources/assets/adastraextra/models/block/adrastea_rock_slab.json",
           "src/main/resources/assets/adastraextra/blockstates/adrastea_rock_slab.json",
@@ -1992,6 +1670,7 @@
           "src/main/resources/assets/adastraextra/models/block/amalthea_rock_slab_top.json",
           "src/main/resources/assets/adastraextra/models/block/amalthea_rock_slab.json",
           "src/main/resources/assets/adastraextra/blockstates/amalthea_rock_slab.json",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/amalthea_rock_slab.json",
           "src/main/java/net/bullfighter/adastraextra/block/AmaltheaRockSlabBlock.java",
           "src/main/resources/assets/adastraextra/models/block/amalthea_rock_slab_full.json"
         ]
@@ -2010,6 +1689,7 @@
           "src/main/resources/assets/adastraextra/models/block/thebe_rock_slab.json",
           "src/main/resources/assets/adastraextra/models/block/thebe_rock_slab_full.json",
           "src/main/java/net/bullfighter/adastraextra/block/ThebeRockSlabBlock.java",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/thebe_rock_slab.json",
           "src/main/resources/assets/adastraextra/blockstates/thebe_rock_slab.json",
           "src/main/resources/assets/adastraextra/models/item/thebe_rock_slab.json"
         ]
@@ -2026,6 +1706,7 @@
         "files": [
           "src/main/resources/assets/adastraextra/blockstates/metis_rock_stairs.json",
           "src/main/resources/assets/adastraextra/models/item/metis_rock_stairs.json",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/metis_rock_stairs.json",
           "src/main/resources/assets/adastraextra/models/block/metis_rock_stairs_outer.json",
           "src/main/java/net/bullfighter/adastraextra/block/MetisRockStairsBlock.java",
           "src/main/resources/assets/adastraextra/models/block/metis_rock_stairs_inner.json",
@@ -2047,6 +1728,7 @@
           "src/main/resources/assets/adastraextra/models/item/adrastea_rock_stairs.json",
           "src/main/resources/assets/adastraextra/models/block/adrastea_rock_stairs_inner.json",
           "src/main/java/net/bullfighter/adastraextra/block/AdrasteaRockStairsBlock.java",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/adrastea_rock_stairs.json",
           "src/main/resources/assets/adastraextra/models/block/adrastea_rock_stairs_outer.json"
         ]
       }
@@ -2065,7 +1747,8 @@
           "src/main/resources/assets/adastraextra/models/block/amalthea_rock_stairs_outer.json",
           "src/main/java/net/bullfighter/adastraextra/block/AmaltheaRockStairsBlock.java",
           "src/main/resources/assets/adastraextra/models/block/amalthea_rock_stairs.json",
-          "src/main/resources/assets/adastraextra/models/item/amalthea_rock_stairs.json"
+          "src/main/resources/assets/adastraextra/models/item/amalthea_rock_stairs.json",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/amalthea_rock_stairs.json"
         ]
       }
     },
@@ -2079,6 +1762,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/adastraextra/models/item/thebe_rock_stairs.json",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/thebe_rock_stairs.json",
           "src/main/resources/assets/adastraextra/models/block/thebe_rock_stairs.json",
           "src/main/resources/assets/adastraextra/models/block/thebe_rock_stairs_inner.json",
           "src/main/java/net/bullfighter/adastraextra/block/ThebeRockStairsBlock.java",
@@ -2097,6 +1781,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/adastraextra/models/block/metis_rock_wall_side_tall.json",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/metis_rock_wall.json",
           "src/main/resources/assets/adastraextra/blockstates/metis_rock_wall.json",
           "src/main/resources/assets/adastraextra/models/block/metis_rock_wall_post.json",
           "src/main/resources/assets/adastraextra/models/item/metis_rock_wall.json",
@@ -2117,6 +1802,7 @@
         "files": [
           "src/main/resources/assets/adastraextra/models/block/adrastea_rock_wall.json",
           "src/main/resources/assets/adastraextra/blockstates/adrastea_rock_wall.json",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/adrastea_rock_wall.json",
           "src/main/resources/assets/adastraextra/models/item/adrastea_rock_wall.json",
           "src/main/resources/assets/adastraextra/models/block/adrastea_rock_wall_post.json",
           "src/main/resources/assets/adastraextra/models/block/adrastea_rock_wall_inventory.json",
@@ -2137,6 +1823,7 @@
           "src/main/java/net/bullfighter/adastraextra/block/AmaltheaRockWallBlock.java",
           "src/main/resources/assets/adastraextra/blockstates/amalthea_rock_wall.json",
           "src/main/resources/assets/adastraextra/models/block/amalthea_rock_wall_side_tall.json",
+          "src/main/resources/data/adastraextra/loot_tables/blocks/amalthea_rock_wall.json",
           "src/main/resources/assets/adastraextra/models/block/amalthea_rock_wall_post.json",
           "src/main/resources/assets/adastraextra/models/block/amalthea_rock_wall.json",
           "src/main/resources/assets/adastraextra/models/item/amalthea_rock_wall.json",
@@ -2153,6 +1840,7 @@
       "registry_name": "thebe_rock_wall",
       "metadata": {
         "files": [
+          "src/main/resources/data/adastraextra/loot_tables/blocks/thebe_rock_wall.json",
           "src/main/resources/assets/adastraextra/blockstates/thebe_rock_wall.json",
           "src/main/resources/assets/adastraextra/models/block/thebe_rock_wall.json",
           "src/main/resources/assets/adastraextra/models/block/thebe_rock_wall_side_tall.json",
@@ -2474,31 +2162,263 @@
           "src/main/resources/data/adastraextra/recipes/thebe_rock_wall_recipe_stonecutter.json"
         ]
       }
+    },
+    {
+      "name": "SetupDimensions",
+      "type": "procedure",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setup_dimensions",
+      "metadata": {
+        "files": [
+          "src/main/java/net/bullfighter/adastraextra/procedures/SetupDimensionsProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "SkyRenderers",
+      "type": "procedure",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sky_renderers",
+      "metadata": {
+        "files": [
+          "src/main/java/net/bullfighter/adastraextra/procedures/SkyRenderersProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "dimension",
+            "type": "dimensiontype"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CloudRenderers",
+      "type": "procedure",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cloud_renderers",
+      "metadata": {
+        "files": [
+          "src/main/java/net/bullfighter/adastraextra/procedures/CloudRenderersProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "dimension",
+            "type": "dimensiontype"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:minecraft:stone_tool_materials": [
+      "CUSTOM:JupiterRock",
+      "CUSTOM:SaturnRock",
+      "CUSTOM:UranusRock",
+      "CUSTOM:NeptuneRock",
+      "CUSTOM:PhobosRock",
+      "CUSTOM:DeimosRock",
+      "CUSTOM:MetisRock",
+      "CUSTOM:AdrasteaRock",
+      "CUSTOM:AmaltheaRock",
+      "CUSTOM:ThebeRock"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:GasCloud"
+    ],
+    "BLOCKS:minecraft:slabs": [
+      "CUSTOM:JupiterRockSlab",
+      "CUSTOM:SaturnRockSlab",
+      "CUSTOM:UranusRockSlab",
+      "CUSTOM:NeptuneRockSlab",
+      "CUSTOM:PhobosRockSlab",
+      "CUSTOM:DeimosRockSlab",
+      "CUSTOM:MetisRockSlab",
+      "CUSTOM:AdrasteaRockSlab",
+      "CUSTOM:AmaltheaRockSlab",
+      "CUSTOM:ThebeRockSlab"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:ThebeRockWall",
+      "~CUSTOM:AmaltheaRockWall",
+      "~CUSTOM:AdrasteaRockWall",
+      "~CUSTOM:MetisRockWall",
+      "~CUSTOM:ThebeRockStairs",
+      "~CUSTOM:AmaltheaRockStairs",
+      "~CUSTOM:AdrasteaRockStairs",
+      "~CUSTOM:MetisRockStairs",
+      "~CUSTOM:ThebeRockSlab",
+      "~CUSTOM:AmaltheaRockSlab",
+      "~CUSTOM:AdrasteaRockSlab",
+      "~CUSTOM:MetisRockSlab",
+      "~CUSTOM:ThebeRock",
+      "~CUSTOM:AmaltheaRock",
+      "~CUSTOM:AdrasteaRock",
+      "~CUSTOM:MetisRock",
+      "~CUSTOM:DeimosRockWall",
+      "~CUSTOM:PhobosRockWall",
+      "~CUSTOM:DeimosRockStairs",
+      "~CUSTOM:PhobosRockStairs",
+      "~CUSTOM:DeimosRockSlab",
+      "~CUSTOM:PhobosRockSlab",
+      "~CUSTOM:DeimosRock",
+      "~CUSTOM:PhobosRock",
+      "~CUSTOM:NeptuneRockWall",
+      "~CUSTOM:UranusRockWall",
+      "~CUSTOM:SaturnRockWall",
+      "~CUSTOM:JupiterRockWall",
+      "~CUSTOM:NeptuneRockStairs",
+      "~CUSTOM:UranusRockStairs",
+      "~CUSTOM:SaturnRockStairs",
+      "~CUSTOM:JupiterRockStairs",
+      "~CUSTOM:NeptuneRockSlab",
+      "~CUSTOM:UranusRockSlab",
+      "~CUSTOM:SaturnRockSlab",
+      "~CUSTOM:JupiterRockSlab",
+      "~CUSTOM:NeptuneRock",
+      "~CUSTOM:UranusRock",
+      "~CUSTOM:SaturnRock",
+      "~CUSTOM:JupiterRock"
+    ],
+    "ITEMS:minecraft:stairs": [
+      "CUSTOM:JupiterRockStairs",
+      "CUSTOM:SaturnRockStairs",
+      "CUSTOM:UranusRockStairs",
+      "CUSTOM:NeptuneRockStairs",
+      "CUSTOM:PhobosRockStairs",
+      "CUSTOM:DeimosRockStairs",
+      "CUSTOM:MetisRockStairs",
+      "CUSTOM:AdrasteaRockStairs",
+      "CUSTOM:AmaltheaRockStairs",
+      "CUSTOM:ThebeRockStairs"
+    ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:ThebeRockWall",
+      "~CUSTOM:AmaltheaRockWall",
+      "~CUSTOM:AdrasteaRockWall",
+      "~CUSTOM:MetisRockWall",
+      "~CUSTOM:ThebeRockStairs",
+      "~CUSTOM:AmaltheaRockStairs",
+      "~CUSTOM:AdrasteaRockStairs",
+      "~CUSTOM:MetisRockStairs",
+      "~CUSTOM:ThebeRockSlab",
+      "~CUSTOM:AmaltheaRockSlab",
+      "~CUSTOM:AdrasteaRockSlab",
+      "~CUSTOM:MetisRockSlab",
+      "~CUSTOM:ThebeRock",
+      "~CUSTOM:AmaltheaRock",
+      "~CUSTOM:AdrasteaRock",
+      "~CUSTOM:MetisRock",
+      "~CUSTOM:DeimosRockWall",
+      "~CUSTOM:PhobosRockWall",
+      "~CUSTOM:DeimosRockStairs",
+      "~CUSTOM:PhobosRockStairs",
+      "~CUSTOM:DeimosRockSlab",
+      "~CUSTOM:PhobosRockSlab",
+      "~CUSTOM:DeimosRock",
+      "~CUSTOM:PhobosRock",
+      "~CUSTOM:NeptuneRockWall",
+      "~CUSTOM:UranusRockWall",
+      "~CUSTOM:SaturnRockWall",
+      "~CUSTOM:JupiterRockWall",
+      "~CUSTOM:NeptuneRockStairs",
+      "~CUSTOM:UranusRockStairs",
+      "~CUSTOM:SaturnRockStairs",
+      "~CUSTOM:JupiterRockStairs",
+      "~CUSTOM:NeptuneRockSlab",
+      "~CUSTOM:UranusRockSlab",
+      "~CUSTOM:SaturnRockSlab",
+      "~CUSTOM:JupiterRockSlab",
+      "~CUSTOM:NeptuneRock",
+      "~CUSTOM:UranusRock",
+      "~CUSTOM:SaturnRock",
+      "~CUSTOM:JupiterRock"
+    ],
+    "BLOCKS:minecraft:walls": [
+      "CUSTOM:JupiterRockWall",
+      "CUSTOM:SaturnRockWall",
+      "CUSTOM:UranusRockWall",
+      "CUSTOM:NeptuneRockWall",
+      "CUSTOM:PhobosRockWall",
+      "CUSTOM:DeimosRockWall",
+      "CUSTOM:MetisRockWall",
+      "CUSTOM:AdrasteaRockWall",
+      "CUSTOM:AmaltheaRockWall",
+      "CUSTOM:ThebeRockWall"
+    ],
+    "ITEMS:minecraft:stone_crafting_materials": [
+      "CUSTOM:JupiterRock",
+      "CUSTOM:SaturnRock",
+      "CUSTOM:UranusRock",
+      "CUSTOM:NeptuneRock",
+      "CUSTOM:PhobosRock",
+      "CUSTOM:DeimosRock",
+      "CUSTOM:MetisRock",
+      "CUSTOM:AdrasteaRock",
+      "CUSTOM:AmaltheaRock",
+      "CUSTOM:ThebeRock"
+    ],
+    "BLOCKS:minecraft:stairs": [
+      "CUSTOM:JupiterRockStairs",
+      "CUSTOM:SaturnRockStairs",
+      "CUSTOM:UranusRockStairs",
+      "CUSTOM:NeptuneRockStairs",
+      "CUSTOM:PhobosRockStairs",
+      "CUSTOM:DeimosRockStairs",
+      "CUSTOM:MetisRockStairs",
+      "CUSTOM:AdrasteaRockStairs",
+      "CUSTOM:AmaltheaRockStairs",
+      "CUSTOM:ThebeRockStairs"
+    ],
+    "ITEMS:minecraft:slabs": [
+      "CUSTOM:JupiterRockSlab",
+      "CUSTOM:SaturnRockSlab",
+      "CUSTOM:UranusRockSlab",
+      "CUSTOM:NeptuneRockSlab",
+      "CUSTOM:PhobosRockSlab",
+      "CUSTOM:DeimosRockSlab",
+      "CUSTOM:MetisRockSlab",
+      "CUSTOM:AdrasteaRockSlab",
+      "CUSTOM:AmaltheaRockSlab",
+      "CUSTOM:ThebeRockSlab"
+    ],
+    "ITEMS:minecraft:walls": [
+      "CUSTOM:JupiterRockWall",
+      "CUSTOM:SaturnRockWall",
+      "CUSTOM:UranusRockWall",
+      "CUSTOM:NeptuneRockWall",
+      "CUSTOM:PhobosRockWall",
+      "CUSTOM:DeimosRockWall",
+      "CUSTOM:MetisRockWall",
+      "CUSTOM:AdrasteaRockWall",
+      "CUSTOM:AmaltheaRockWall",
+      "CUSTOM:ThebeRockWall"
+    ]
+  },
   "language_map": {
     "en_us": {
       "block.adastraextra.adrastea_rock": "Adrastea Rock",
       "block.adastraextra.metis_rock_stairs": "Metis Rock Stairs",
       "block.adastraextra.saturn_rock_wall": "Saturn Rock Wall",
+      "planet.adastraextra.amalthea": "Amalthea",
       "item_group.adastraextra.ad_astra_extra_tab": "Ad Astra Extra",
-      "gui.adastraextra.mars.deimos": "Deimos",
       "block.adastraextra.amalthea_rock": "Amalthea Rock",
       "block.adastraextra.phobos_rock_wall": "Phobos Rock Wall",
-      "gui.adastraextra.saturn": "Saturn",
       "block.adastraextra.phobos_rock_stairs": "Phobos Rock Stairs",
       "block.adastraextra.adrastea_rock_wall": "Adrastea Rock Wall",
-      "gui.adastraextra.jupiter": "Jupiter",
       "block.adastraextra.saturn_rock_slab": "Saturn Rock Slab",
-      "gui.adastraextra.jupiter.thebe": "Thebe",
       "biome.adastraextra.saturn_plains": "Saturn Plains",
       "block.adastraextra.phobos_rock_slab": "Phobos Rock Slab",
       "block.adastraextra.deimos_rock": "Deimos Rock",
-      "gui.adastraextra.jupiter.amalthea": "Amalthea",
       "block.adastraextra.metis_rock": "Metis Rock",
-      "gui.adastraextra.neptune": "Neptune",
       "block.adastraextra.adrastea_rock_slab": "Adrastea Rock Slab",
       "block.adastraextra.gas_cloud": "Gas Cloud",
       "block.adastraextra.thebe_rock_slab": "Thebe Rock Slab",
@@ -2507,6 +2427,7 @@
       "biome.adastraextra.uranus_frozen_plains": "Uranus Frozen Plains",
       "biome.adastraextra.thebe_plains": "Thebe Plains",
       "death.attack.gassed": "%1$s was gassed",
+      "planet.adastraextra.phobos": "Phobos",
       "biome.adastraextra.uranus_plains": "Uranus Plains",
       "biome.adastraextra.adrastea_plains": "Adrastea Plains",
       "block.adastraextra.amalthea_rock_wall": "Amalthea Rock Wall",
@@ -2514,29 +2435,34 @@
       "block.adastraextra.deimos_rock_stairs": "Deimos Rock Stairs",
       "block.adastraextra.jupiter_rock_stairs": "Jupiter Rock Stairs",
       "biome.adastraextra.deimos_plains": "Deimos Plains",
+      "planet.adastraextra.jupiter": "Jupiter",
+      "planet.adastraextra.metis": "Metis",
+      "planet.adastraextra.uranus": "Uranus",
       "block.adastraextra.uranus_rock": "Uranus Rock",
       "block.adastraextra.neptune_rock": "Neptune Rock",
       "block.adastraextra.uranus_rock_stairs": "Uranus Rock Stairs",
+      "planet.adastraextra.thebe": "Thebe",
+      "planet.adastraextra.saturn": "Saturn",
       "block.adastraextra.neptune_rock_wall": "Neptune Rock Wall",
       "biome.adastraextra.orbit": "Orbit",
       "block.adastraextra.thebe_rock_wall": "Thebe Rock Wall",
+      "planet.adastraextra.deimos": "Deimos",
       "block.adastraextra.metis_rock_slab": "Metis Rock Slab",
-      "gui.adastraextra.mars.phobos": "Phobos",
       "biome.adastraextra.amalthea_plains": "Amalthea Plains",
       "block.adastraextra.thebe_rock": "Thebe Rock",
-      "gui.adastraextra.jupiter.adrastea": "Adrastea",
       "block.adastraextra.saturn_rock": "Saturn Rock",
       "block.adastraextra.neptune_rock_slab": "Neptune Rock Slab",
       "block.adastraextra.jupiter_rock_slab": "Jupiter Rock Slab",
-      "gui.adastraextra.jupiter.metis": "Metis",
       "block.adastraextra.phobos_rock": "Phobos Rock",
       "block.adastraextra.deimos_rock_wall": "Deimos Rock Wall",
       "block.adastraextra.uranus_rock_wall": "Uranus Rock Wall",
       "block.adastraextra.thebe_rock_stairs": "Thebe Rock Stairs",
       "biome.adastraextra.neptune_plains": "Neptune Plains",
       "block.adastraextra.metis_rock_wall": "Metis Rock Wall",
+      "planet.adastraextra.adrastea": "Adrastea",
       "biome.adastraextra.metis_plains": "Metis Plains",
       "block.adastraextra.jupiter_rock": "Jupiter Rock",
+      "planet.adastraextra.neptune": "Neptune",
       "block.adastraextra.saturn_rock_stairs": "Saturn Rock Stairs",
       "block.adastraextra.neptune_rock_stairs": "Neptune Rock Stairs",
       "block.adastraextra.jupiter_rock_wall": "Jupiter Rock Wall",
@@ -2545,8 +2471,7 @@
       "block.adastraextra.uranus_rock_slab": "Uranus Rock Slab",
       "death.attack.gassed.item": "%1$s was gassed by %2$s using %3$s",
       "block.adastraextra.amalthea_rock_stairs": "Amalthea Rock Stairs",
-      "biome.adastraextra.phobos_plains": "Phobos Plains",
-      "gui.adastraextra.uranus": "Uranus"
+      "biome.adastraextra.phobos_plains": "Phobos Plains"
     }
   },
   "foldersRoot": {
@@ -2556,11 +2481,10 @@
   "workspaceSettings": {
     "modid": "adastraextra",
     "modName": "Ad Astra Extra",
-    "version": "1.2.2",
+    "version": "1.3.0",
     "author": "Bullfighter",
-    "websiteURL": "https://legacy.curseforge.com/minecraft/mc-mods/ad-astra-extra",
+    "websiteURL": "https://curseforge.com/minecraft/mc-mods/ad-astra-extra",
     "license": "Academic Free License v3.0",
-    "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "modPicture": "logo",
     "requiredMods": [
@@ -2571,10 +2495,9 @@
     "mcreatorDependencies": [
       "adastra"
     ],
-    "currentGenerator": "forge-1.20.1",
+    "currentGenerator": "neoforge-1.20.4",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
-    "modElementsPackage": "net.bullfighter.adastraextra",
-    "lockBaseModFiles": false
+    "modElementsPackage": "net.bullfighter.adastraextra"
   },
-  "mcreatorVersion": 202300452316
+  "mcreatorVersion": 202400118518
 }

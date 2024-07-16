@@ -4,18 +4,16 @@
  */
 package net.bullfighter.adastraextra.init;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.fml.common.Mod;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
 
 import net.minecraft.world.level.levelgen.feature.Feature;
+import net.minecraft.core.registries.Registries;
 
 import net.bullfighter.adastraextra.world.features.GasCloudFeatureFeature;
 import net.bullfighter.adastraextra.AdastraextraMod;
 
-@Mod.EventBusSubscriber
 public class AdastraextraModFeatures {
-	public static final DeferredRegister<Feature<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.FEATURES, AdastraextraMod.MODID);
-	public static final RegistryObject<Feature<?>> GAS_CLOUD_FEATURE = REGISTRY.register("gas_cloud_feature", GasCloudFeatureFeature::new);
+	public static final DeferredRegister<Feature<?>> REGISTRY = DeferredRegister.create(Registries.FEATURE, AdastraextraMod.MODID);
+	public static final DeferredHolder<Feature<?>, Feature<?>> GAS_CLOUD_FEATURE = REGISTRY.register("gas_cloud_feature", GasCloudFeatureFeature::new);
 }

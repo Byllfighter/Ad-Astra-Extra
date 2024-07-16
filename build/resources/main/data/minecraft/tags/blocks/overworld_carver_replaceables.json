@@ -1,18 +1,18 @@
 {
   "replace": false,
   "values": [
-    "adastraextra:jupiter_rock",
-    "minecraft:air",
-    "adastraextra:saturn_rock",
+    "adastraextra:thebe_rock",
+    "adastraextra:amalthea_rock",
+    "adastraextra:adrastea_rock",
+    "adastraextra:metis_rock",
+    "adastraextra:deimos_rock",
+    "adastraextra:phobos_rock",
+    "minecraft:blue_ice",
+    "adastraextra:neptune_rock",
     "adastraextra:uranus_rock",
     "minecraft:packed_ice",
-    "adastraextra:neptune_rock",
-    "minecraft:blue_ice",
-    "adastraextra:phobos_rock",
-    "adastraextra:deimos_rock",
-    "adastraextra:metis_rock",
-    "adastraextra:adrastea_rock",
-    "adastraextra:amalthea_rock",
-    "adastraextra:thebe_rock"
+    "adastraextra:saturn_rock",
+    "minecraft:air",
+    "adastraextra:jupiter_rock"
   ]
 }

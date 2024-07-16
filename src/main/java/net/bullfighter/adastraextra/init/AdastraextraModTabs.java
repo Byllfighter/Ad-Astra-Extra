@@ -4,8 +4,8 @@
  */
 package net.bullfighter.adastraextra.init;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.CreativeModeTab;
@@ -16,7 +16,7 @@ import net.bullfighter.adastraextra.AdastraextraMod;
 
 public class AdastraextraModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, AdastraextraMod.MODID);
-	public static final RegistryObject<CreativeModeTab> AD_ASTRA_EXTRA_TAB = REGISTRY.register("ad_astra_extra_tab",
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> AD_ASTRA_EXTRA_TAB = REGISTRY.register("ad_astra_extra_tab",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.adastraextra.ad_astra_extra_tab")).icon(() -> new ItemStack(AdastraextraModBlocks.JUPITER_ROCK.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(AdastraextraModBlocks.GAS_CLOUD.get().asItem());
 				tabData.accept(AdastraextraModBlocks.JUPITER_ROCK.get().asItem());

@@ -1,0 +1,11 @@
+{
+  "dimension": "adastraextra:saturn",
+  "gravity": 10.44,
+  "orbit": "adastraextra:saturn_orbit",
+  "oxygen": false,
+  "solar_power": 7,
+  "solar_system": "ad_astra:solar_system",
+  "temperature": -178,
+  "tier": 4,
+  "additional_launch_dimensions": []
+}

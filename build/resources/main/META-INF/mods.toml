@@ -1,34 +1,43 @@
 modLoader="javafml"
-loaderVersion="[47,)"
+loaderVersion="[2,)"
 license="Academic Free License v3.0"
 
 [[mods]]
 modId="adastraextra"
-version="1.2.2"
+version="1.3.0"
 displayName="Ad Astra Extra"
-displayURL="https://legacy.curseforge.com/minecraft/mc-mods/ad-astra-extra"
+displayURL="https://curseforge.com/minecraft/mc-mods/ad-astra-extra"
 logoFile="logo.png"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 authors="Bullfighter"
 
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
 [[dependencies.adastraextra]]
-    modId="minecraft"
-    mandatory=true
-    versionRange="[1.20.1]"
+    modId="neoforge"
+    type="required"
+    versionRange="[20.4.223,)"
     ordering="NONE"
     side="BOTH"
 
+[[dependencies.adastraextra]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.20.4]"
+    ordering="NONE"
+    side="BOTH"
 
 [[dependencies.adastraextra]]
     modId="ad_astra"
-    mandatory=true
+    type="required"
     versionRange="[0,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.adastraextra]]
     modId="adastra"
-    mandatory=false
+    type="optional"
     versionRange="[0,)"
     ordering="NONE"
     side="BOTH"

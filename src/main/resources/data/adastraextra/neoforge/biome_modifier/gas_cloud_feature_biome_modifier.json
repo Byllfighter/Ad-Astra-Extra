@@ -1,0 +1,8 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:any"
+  },
+  "features": "adastraextra:gas_cloud_feature",
+  "step": "surface_structures"
+}

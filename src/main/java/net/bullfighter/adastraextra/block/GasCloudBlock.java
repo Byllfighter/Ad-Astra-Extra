@@ -11,25 +11,15 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.bullfighter.adastraextra.procedures.GasCloudEntityCollidesInTheBlockProcedure;
 
-import java.util.List;
-
 public class GasCloudBlock extends Block {
 	public GasCloudBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().sound(SoundType.EMPTY).strength(1f, 10f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).noLootTable());
-	}
-
-	@Override
-	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+		super(BlockBehaviour.Properties.of().ignitedByLava().sound(SoundType.EMPTY).strength(1f, 10f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
